@@ -120,16 +120,16 @@ async def wallet_process(wallet: Wallet, context: BrowserContext):
     sahara = Sahara(wallet, context)
 
     logger.info("Starting Galxe")
-    # await galxe.connect_wallet()
-    # await galxe.complete_tasks()
+    await galxe.connect_wallet()
+    await galxe.complete_tasks()
     logger.info("Completed Galxe")
 
     await asyncio.sleep(5)
     logger.info("Starting Sahara")
 
-    # await sahara.connect_wallet()
-    # await sahara.tx_task()
-    # await sahara.claim_tasks()
+    await sahara.connect_wallet()
+    await sahara.tx_task()
+    await sahara.claim_tasks()
 
     if MINT_NFT:
         nft = NFT(wallet=wallet)
