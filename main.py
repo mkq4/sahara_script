@@ -44,7 +44,7 @@ async def main():
             try:
                 logger.info(f"Starting wallet - {wallet.address}")
 
-                # await restore_wallet(context=context, wallet=wallet)
+                await restore_wallet(context=context, wallet=wallet)
                 await wallet_process(wallet=wallet, context=context)
 
             except Exception as e:
