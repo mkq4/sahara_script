@@ -7,9 +7,10 @@ SaharaAi playwright script for daily tasks:
 How to install:
   1. clone (git clone https://github.com/mkq4/SaharaAi_daily_script.git) or download repository
   2. install requirements.txt (pip3 install requirements.txt) / (pip install requirements.txt) in script directory
-  3. fill data/seeds.txt file
-  4. fill data/proxy.txt file
-  5. CHANGE settings at CONFIG
+  3. paste your metamask extention in metamask/metamsk (guide at config)
+  4. fill data/seeds.txt file
+  5. fill data/proxy.txt file
+  6. CHANGE settings at CONFIG
 
 if MINT_NFT = True:
   it will mint random one of three NFT at SAHARA network
